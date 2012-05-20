@@ -1,13 +1,14 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.3'
-
+gem 'bootstrap-sass', '2.0.3'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development, :test do
   gem 'mysql'
   gem 'rspec-rails', '2.10.0'
+  gem 'guard-rspec', '0.5.5'
 end
 
 
@@ -21,12 +22,18 @@ group :assets do
   # gem 'therubyracer', :platform => :ruby
 
   gem 'uglifier', '>= 1.2.3'
+  gem 'bootstrap-sass', '2.0.3'  
 end
 
 gem 'jquery-rails', '2.0.0'
 
 group :test do
+  gem 'rspec-rails', '2.10.0'
   gem 'capybara', '1.1.2'
+  gem 'rb-inotify', '0.8.8'
+  gem 'libnotify', '0.5.9'
+  gem 'guard-spork', '0.3.2'
+  gem 'spork', '0.9.0'
 end
 
 group :production do
