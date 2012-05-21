@@ -15,6 +15,8 @@ group :development, :test do
   gem 'guard-rspec', '0.5.5'
   gem 'annotate', '~> 2.4.1.beta'
   gem 'factory_girl_rails', '1.4.0'
+  gem 'therubyracer'
+  gem 'jquery-rails', '2.0.0' 
 end
 
 
@@ -25,7 +27,7 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.2'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platform => :ruby
+  gem 'therubyracer', :platform => :ruby
 
   gem 'uglifier', '>= 1.2.3'
   gem 'bootstrap-sass', '2.0.3'  
@@ -41,6 +43,8 @@ group :test do
   gem 'guard-spork', '0.3.2'
   gem 'spork', '0.9.0'
   gem 'factory_girl_rails', '1.4.0'
+  gem 'therubyracer'
+  gem 'jquery-rails', '2.0.0'
 end
 
 group :production do
