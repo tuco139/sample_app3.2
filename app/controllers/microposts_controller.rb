@@ -1,6 +1,8 @@
 class MicropostsController < ApplicationController
-  before_filter :signed_in_user, only: [:create, :destroy]
-  before_filter :correct_user,   only: :destroy
+  before_filter :signed_in_user
+  before_filter :correct_user,   only: [:edit, :update, :destroy]
+  
+  respond_to :html, :js 
   
   def create
     @micropost = current_user.microposts.build(params[:micropost])
@@ -16,6 +18,7 @@ class MicropostsController < ApplicationController
   def destroy
     @micropost.destroy
     redirect_to root_path
+ #   redirect_to request.referer
   end
   
   private
