@@ -18,16 +18,16 @@ development:
 test:
   adapter: mysql
   encoding: utf8
-  database: sample_app
+  database: sample_app_test
   pool: 5
   username: root
   password: bf21192
   socket: /var/lib/mysql/mysql.sock
 
-test:
+production:
   adapter: mysql
   encoding: utf8
-  database: sample_app
+  database: sample_app_production
   pool: 5
   username: root
   password: bf21192

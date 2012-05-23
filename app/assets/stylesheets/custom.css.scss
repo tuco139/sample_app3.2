@@ -5,8 +5,8 @@
 $grayMediumLight: #eaeaea;
 
 @mixin box_sizing {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
   box-sizing: border-box;
 }
 
@@ -37,7 +37,7 @@ textarea {
 
 /* typography */
 
-h1, h2, h3, h4, h5 h6 {
+h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
 
@@ -62,20 +62,21 @@ p {
   line-height: 1.7em;
 }
 
+
 /* header */
 
 #logo {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #fff;
+  color: white;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
   &:hover {
-    color: $white;
+    color: white;
     text-decoration: none;
   }
 }
@@ -89,12 +90,12 @@ footer {
   color: $grayLight;
   a {
     color: $gray;
-    &:hover {
+    &:hover { 
       color: $grayDarker;
     }
-  }
-  small {
-    float: left;
+  }  
+  small { 
+    float: left; 
   }
   ul {
     float: right;
@@ -179,16 +180,16 @@ aside {
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
-  paddiing: 10px;
+  padding: 10px;
   height: auto;
   margin-bottom: 15px;
   @include box_sizing;
 }
 
 #error_explanation {
-  color: #f00;
+  color:#f00;
   ul {
-    list_style: none;
+    list-style: none;
     margin: 0 0 18px 0;
   }
 }
@@ -196,9 +197,9 @@ input, textarea, select, .uneditable-input {
 .field_with_errors {
   @extend .control-group;
   @extend .error;
-}
+ }
 
-/* users index */
+ /* users index */
 
 .users {
   list-style: none;
@@ -218,22 +219,21 @@ input, textarea, select, .uneditable-input {
 .microposts {
   list-style: none;
   margin: 10px 0 0 0;
-
+  
   li {
     padding: 10px 0;
     border-top: 1px solid #e8e8e8;
   }
 }
+
 .content {
   display: block;
 }
+
 .timestamp {
   color: $grayLight;
 }
-.gravatar {
-  float: left;
-  margin-right: 10px;
-}
+
 aside {
   textarea {
     height: 100px;
