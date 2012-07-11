@@ -1,3 +1,3 @@
 == Welcome to Rails
 
-Welcome
+Welcome to my nightmare
